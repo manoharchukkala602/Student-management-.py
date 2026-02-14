@@ -4,7 +4,7 @@ def add_student():
     name = input("Enter student name: ")
     roll = input("Enter roll number: ")
     students.append({"name": name, "roll": roll})
-    print("✅ Student added successfully")
+    print(" Student added successfully")
 
 def view_students():
     if not students:
@@ -18,9 +18,9 @@ def delete_student():
     for s in students:
         if s["roll"] == roll:
             students.remove(s)
-            print("✅ Student deleted")
+            print(" Student deleted")
             return
-    print("❌ Student not found")
+    print(" Student not found")
 
 while True:
     print("\n--- Student Management System ---")
@@ -38,7 +38,7 @@ while True:
     elif choice == "3":
         delete_student()
     elif choice == "4":
-        print("Bye 👋")
+        print("Bye ")
         break
     else:
         print("Invalid choice")
